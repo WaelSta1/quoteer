@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="getQuotes()">
     <div class="quote-container" id="quote-container">
         <!-- Quote -->
         <div class="quote-text">
@@ -24,7 +24,7 @@
             <button class="twitter-button" id="twitter" title="tweet this!" >
                 <i class="fab fa-twitter"></i>
             </button>
-            <button id="new-quote">New Quote</button>
+            <button id="new-quote" onclick="(displayQuote())" >New Quote </button>
         </div>
     </div>
     <!-- Script -->
